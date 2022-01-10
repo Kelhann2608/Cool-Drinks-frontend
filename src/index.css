@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap");
+.App {
+  text-align: center;
+  font-family: "Oregano", cursive;
+}
+header {
+  display: flex;
+  height: 100px;
+  background-color: #00512a;
+  font-family: "Oregano", cursive;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  align-content: center;
+}
+.nav-links-a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-left: 70px;
+  padding-top: 10px;
+  font-size: 36px;
+  color: white;
+}
+.home-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+h1 {
+  font-size: 32x;
+}
+.paragraph {
+  font-size: 26px;
 }
