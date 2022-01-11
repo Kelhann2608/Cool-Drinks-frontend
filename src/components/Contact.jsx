@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Contact.css';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -39,7 +40,7 @@ const Contact = () => {
 
   return (
     <form className="contact-form">
-      <h2>Contactez-nous</h2>
+      <h2 className='contact-h2'>Pour vos commandes personnalisées, veuillez nous laisser vos coordonnées</h2>
       <div className="form-content">
         <input
           type="text"
@@ -78,11 +79,13 @@ const Contact = () => {
           />
           <label id="not-mail">Email non valide</label>
         </div>
-        <div className='select'>
-          <select name="select-demande" id="select-id">
+        <div className='select-content'>
+          <label for="select">Demande :</label>
+          <select name="select" type="select" id="select">
             <option value="">--Veuillez choisir une option</option>
             <option value="devis">Devis</option>
             <option value="réclamation">Réclamation</option>
+            <option value="commandes">Commandes</option>
           </select>
         </div>
         <textarea

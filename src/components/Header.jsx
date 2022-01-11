@@ -1,5 +1,6 @@
-import { useDebugValue } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
+import cadenas from './Assets/cadenas.png'
 
 const Header = () => {
   return (
@@ -38,8 +39,8 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-links-a" to="/Admin">
-                Admin
+              <NavLink className="nav-links-a" to="/Admin" logo="cadenas">
+                <img src={cadenas} alt="cadenas" />
               </NavLink>
             </li>
           </ul>
