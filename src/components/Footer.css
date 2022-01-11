@@ -21,8 +21,10 @@
 .text-footer {
   padding-top: 0.5px;
   font-size: 25px;
+  color: white;
 }
 .mail-footer {
   padding-top: 10px;
   font-size: 30px;
+  color: white;
 }
