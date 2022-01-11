@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
-
+import React from "react";
+import { NavLink } from "react-router-dom";
+import cadenas from './Assets/cadenas.png'
 
 const Header = () => {
   return (
@@ -8,39 +9,39 @@ const Header = () => {
         <nav className="navbar">
           <ul className="nav-links">
           <li>
-              <Link className="nav-links-a" to="/Cool-drinks/">
+              <NavLink className="nav-links-a" exact="true" to="/">
                 Cool Drinks
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-links-a" to="/Cool-drinks/">
+              <NavLink className="nav-links-a" exact to="/">
                 Acceuil
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-links-a" to="/Cool-drinks/Boissons chaudes">
+              <NavLink className="nav-links-a" to="/Boissons chaudes">
                 Boissons chaudes
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-links-a" to="/Cool-drinks/Boissons froides">
+              <NavLink className="nav-links-a" to="/Boissons froides">
                 Boissons froides
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-links-a" to="/Cool-drinks/Gourmandises">
+              <NavLink className="nav-links-a" to="/Gourmandises">
                 Gourmandises
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-links-a" to="/Cool-drinks/Contact">
+              <NavLink className="nav-links-a" to="/Contact">
                 Contact
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav-links-a" to="/Cool-drinks/Admin">
-                Admin
-              </Link>
+              <NavLink className="nav-links-a" to="/Admin" logo="cadenas">
+                <img src={cadenas} alt="cadenas" />
+              </NavLink>
             </li>
           </ul>
         </nav>

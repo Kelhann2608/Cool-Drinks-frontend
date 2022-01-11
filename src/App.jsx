@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -8,6 +8,7 @@ import BoissonsFroides from './components/BoissonsFroides';
 import Gourmandises from './components/Gourmandises';
 import Admin from './components/Admin';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,19 +16,14 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes className='navbar'>
-          <Route path="/" exact component={Home} />
-          <Route path="/Boissons_chaudes" component={BoissonsChaudes} />
-          <Route path="/Boissons_froides" component={BoissonsFroides} />
-          <Route path="/Gourmandises" component={Gourmandises} />
-          <Route path="/Contact" component={Contact} />
-          <Route path="/Admin" component={Admin} />
-        </Routes>
-        <Admin />
-        <BoissonsChaudes />
-        <BoissonsFroides />
-        <Contact />
-        <Gourmandises />
-        <Home />
+          <Route path="/" exact element={ <Home /> } />
+          <Route path="/Boissons_chaudes" element={<BoissonsChaudes />} />
+          <Route path="/Boissons_froides" element={<BoissonsFroides />} />
+          <Route path="/Gourmandises" element={<Gourmandises />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Admin" element={<Admin />} />
+        </Routes>  
+        <Footer />
       </BrowserRouter>
     </div>
   );
