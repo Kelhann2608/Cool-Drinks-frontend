@@ -8,6 +8,7 @@ import BoissonsFroides from './components/BoissonsFroides';
 import Gourmandises from './components/Gourmandises';
 import Admin from './components/Admin';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Admin" element={<Admin />} />
         </Routes>  
+        <Footer />
       </BrowserRouter>
     </div>
   );

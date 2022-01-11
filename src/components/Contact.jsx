@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <form className="contact-form">
-      <h2 className='contact-h2'>Pour vos commandes personnalisées, veuillez nous laisser vos coordonnées</h2>
+      <h1 className='contact-h1'>Pour vos commandes personnalisées, veuillez nous laisser vos coordonnées</h1>
       <div className="form-content">
         <input
           type="text"

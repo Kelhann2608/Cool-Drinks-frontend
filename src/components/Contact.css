@@ -1,15 +1,17 @@
-.form-content {
+.contact-form {
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
-.contact-h2 {
-  display: block;
+.contact-h1 {
+  display: flex;
   margin-top: 40px;
   margin-bottom: 100px;
+  justify-content: center;
 }
 input,
 select {
-  display: block;
+  display: flex;
   align-content: center;
   width: 40%;
   height: 30px;
@@ -20,8 +22,7 @@ select {
   border-bottom: 2px solid black;
 }
 textarea {
-  display: block;
-  margin-left: 572px;
+  justify-items: center;
   width: 40%;
   height: 150px;
   text-align: center;
