@@ -5,7 +5,7 @@
 }
 header {
   display: flex;
-  height: 80px;
+  height: 90px;
   width: 100%;
   background-color: #00512a;
   font-family: "Oregano", cursive;
@@ -21,21 +21,28 @@ body {
   display: flex;
   flex-direction: row;
 }
-
 .nav-links {
   display: flex;
   list-style-type: none;
   align-content: center;
-  margin-left: 150px;
 }
 .nav-links-a {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  margin-left: 60px;
-  padding-top: 5px;
-  font-size: 36px;
+  margin-left: 70px;
+  padding-top: 4px;
+  font-size: 40px;
   color: white;
+}
+.nav-links-ac {
+  display: flex;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  margin-left: 80px;
+  margin-right: 40px;
+  padding-top: 4px;
 }
 .cadenas {
   width: 50px;
@@ -44,7 +51,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 22vw;
+  height: 25vw;
 }
 h1 {
   font-size: 32px;
@@ -57,14 +64,21 @@ h1 {
   .nav-links-a {
     display: flex;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 20px;
     padding-top: 5px;
     font-size: 22px;
     flex-wrap: wrap;
     color: white;
   }
+  .nav-links-ac {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    padding-top: 5px;
+  }
   .cadenas {
-    width: 40px;
+    width: 35px;
+    padding-bottom: 8px;
   }
   h1 {
     font-size: 21px;
@@ -78,9 +92,17 @@ h1 {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    padding-top: 5px;
     font-size: 20px;
     flex-wrap: wrap;
     color: white;
+  }
+  .nav-links-ac {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 5px;
   }
   .cadenas {
     width: 30px;

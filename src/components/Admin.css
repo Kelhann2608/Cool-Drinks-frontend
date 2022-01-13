@@ -16,7 +16,10 @@
   margin-top: 20px;
 }
 .input-admin {
+  display: flex;
   border: 2px solid black;
+  width: 30%;
+  height: 30px;
 }
 .button-admin {
   display: flex;
