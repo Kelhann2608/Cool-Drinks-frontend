@@ -40,7 +40,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink className="nav-links-a" to="/Admin" logo="cadenas">
-                <img src={cadenas} alt="cadenas" />
+                <img src={cadenas} alt="cadenas" className="cadenas" />
               </NavLink>
             </li>
           </ul>
