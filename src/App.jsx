@@ -17,8 +17,8 @@ function App() {
         <Header />
         <Routes className='navbar'>
           <Route path="/" exact element={ <Home /> } />
-          <Route path="/Boissons_chaudes" element={<BoissonsChaudes />} />
-          <Route path="/Boissons_froides" element={<BoissonsFroides />} />
+          <Route path="/BoissonsChaudes" element={<BoissonsChaudes />} />
+          <Route path="/BoissonsFroides" element={<BoissonsFroides />} />
           <Route path="/Gourmandises" element={<Gourmandises />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Admin" element={<Admin />} />

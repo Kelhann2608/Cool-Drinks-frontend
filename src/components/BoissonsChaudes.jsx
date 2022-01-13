@@ -2,8 +2,8 @@ import React from 'react';
 
 const BoissonsChaudes = () => {
     return (
-        <div>
-           
+        <div className='boissons-chaudes'>
+           <h1>Vous trouverez ici, toutes une gamme de cafés</h1>
         </div>
     );
 };

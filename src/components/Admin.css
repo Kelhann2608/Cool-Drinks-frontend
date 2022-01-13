@@ -1,0 +1,31 @@
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+.admin-h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.admin-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 20px;
+}
+.input-admin {
+  display: flex;
+  border: 2px solid black;
+  width: 30%;
+  height: 30px;
+}
+.button-admin {
+  display: flex;
+  margin-top: 10px;
+  width: 10%;
+  justify-content: center;
+  align-self: center;
+  box-shadow: 2px 2px 2px black;
+}

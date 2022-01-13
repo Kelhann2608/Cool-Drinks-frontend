@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Admin.css';
 
 const Admin = () => {
   const [login, setLogin] = useState("");
@@ -8,12 +9,14 @@ const Admin = () => {
     e.preventDefault();
     };
   return (
-    <div>
-      <h1>
+    <div className="admin-container">
+      <h1 className="admin-h1">
         Pour accéder à la plateforme d'administration, veuillez vous connecter
       </h1>
       <div className="admin-content">
+      <label for="login">Login</label>
         <input
+          className="input-admin"
           type="text"
           name="login"
           id="login"
@@ -21,7 +24,9 @@ const Admin = () => {
           placeholder="Login"
           value={login}
         />
+        <label for="password">Password</label>
         <input
+        className="input-admin"
           type="text"
           name="password"
           id="password"

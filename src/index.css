@@ -5,7 +5,7 @@
 }
 header {
   display: flex;
-  height: 100px;
+  height: 90px;
   width: 100%;
   background-color: #00512a;
   font-family: "Oregano", cursive;
@@ -21,64 +21,96 @@ body {
   display: flex;
   flex-direction: row;
 }
-
 .nav-links {
   display: flex;
   list-style-type: none;
   align-content: center;
-  margin-left: 150px;
 }
 .nav-links-a {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  margin-left: 60px;
-  padding-top: 10px;
-  font-size: 36px;
+  margin-left: 70px;
+  padding-top: 4px;
+  font-size: 40px;
   color: white;
+}
+.nav-links-ac {
+  display: flex;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  margin-left: 80px;
+  margin-right: 40px;
+  padding-top: 4px;
+}
+.cadenas {
+  width: 50px;
 }
 .home-image {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 21vw;
+  height: 25vw;
 }
 h1 {
-  font-size: 32x;
+  font-size: 32px;
 }
 .paragraph {
   font-size: 26px;
 }
 
-.admin-content {
-  margin: 3rem auto 0;
-  max-width: 50%;
-  max-width: 350px;
-  font-family: "Oregano", cursive;
-  border: 1px solid #0a0a0a;
-  background: #f5f2f2;
-  padding: 0 30px 10px;
-  box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.637);
-}
-.button-admin {
-  font-size: 1.1rem;
-  margin-top: 15px;
-  color: #070707;
-  border: 1px solid black;
-  background: rgba(0, 0, 0, 0.411);
-  box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.637);
-  cursor: pointer;
-  transition: 0.2s;
-  width: 100%;
-}
 @media screen and (max-width: 1600px) {
   .nav-links-a {
     display: flex;
-    justify-content: space-between;
     text-decoration: none;
-    margin-left: 30px;
-    padding-top: 10px;
-    font-size: 26px;
+    margin-left: 20px;
+    padding-top: 5px;
+    font-size: 22px;
+    flex-wrap: wrap;
     color: white;
+  }
+  .nav-links-ac {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    padding-top: 5px;
+  }
+  .cadenas {
+    width: 35px;
+    padding-bottom: 8px;
+  }
+  h1 {
+    font-size: 21px;
+  }
+  .paragraph {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 875px) {
+  .nav-links-a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding-top: 5px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    color: white;
+  }
+  .nav-links-ac {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 5px;
+  }
+  .cadenas {
+    width: 30px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .paragraph {
+    font-size: 18px;
   }
 }

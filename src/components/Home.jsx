@@ -15,6 +15,8 @@ const Home = () => {
         froides, des petites gourmandises, pour le plus grand plaisirs des
         petits et des grands.
       </p>
+      <p className="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus, accusantium non quas aperiam saepe dolorem ullam id molestiae 
+        temporibus nobis molestias quod debitis, perferendis omnis.<br/> Dicta aliquam possimus pariatur sunt distinctio natus, reiciendis, totam similique dolore error ad quod?</p>
     </div>
   );
 };

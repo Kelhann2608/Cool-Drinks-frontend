@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import cadenas from './Assets/cadenas.png'
+import cadenas from "./Assets/cadenas.png";
 
 const Header = () => {
   return (
@@ -8,8 +8,8 @@ const Header = () => {
       <header className="header-nav">
         <nav className="navbar">
           <ul className="nav-links">
-          <li>
-              <NavLink className="nav-links-a" exact="true" to="/">
+            <li>
+              <NavLink className="nav-links-ac" exact="true" to="/">
                 Cool Drinks
               </NavLink>
             </li>
@@ -19,12 +19,12 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-links-a" to="/Boissons chaudes">
+              <NavLink className="nav-links-a" to="/BoissonsChaudes">
                 Boissons chaudes
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-links-a" to="/Boissons froides">
+              <NavLink className="nav-links-a" to="/BoissonsFroides">
                 Boissons froides
               </NavLink>
             </li>
@@ -40,7 +40,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink className="nav-links-a" to="/Admin" logo="cadenas">
-                <img src={cadenas} alt="cadenas" />
+                <img src={cadenas} alt="cadenas" className="cadenas" />
               </NavLink>
             </li>
           </ul>

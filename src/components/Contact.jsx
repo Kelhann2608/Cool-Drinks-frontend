@@ -42,6 +42,7 @@ const Contact = () => {
     <form className="contact-form">
       <h1 className='contact-h1'>Pour vos commandes personnalisées, veuillez nous laisser vos coordonnées</h1>
       <div className="form-content">
+      <label for="name">Nom</label>
         <input
           type="text"
           id="name"
@@ -51,6 +52,7 @@ const Contact = () => {
           value={name}
           autoComplete="off"
         />
+        <label for="firstname">Prénom</label>
         <input
           type="text"
           id="firstname"
@@ -59,6 +61,7 @@ const Contact = () => {
           placeholder="prénom"
           value={firstName}
         />
+        <label for="phone">Téléphone</label>
         <input
           type="text"
           id="phone"
@@ -67,7 +70,8 @@ const Contact = () => {
           placeholder="téléphone"
           value={phone}
         />
-        <div className="email-content">          
+        <div className="email-content"> 
+        <label for="email">Email</label>         
           <input
             type="mail"
             id="email"
@@ -80,7 +84,7 @@ const Contact = () => {
           <label id="not-mail">Email non valide</label>
         </div>
         <div className='select-content'>
-          <label for="select">Demande :</label>
+          <label for="select">Demande</label>
           <select name="select" type="select" id="select">
             <option value="">--Veuillez choisir une option</option>
             <option value="devis">Devis</option>
@@ -88,6 +92,8 @@ const Contact = () => {
             <option value="commandes">Commandes</option>
           </select>
         </div>
+        <div className='message-content'>
+        <label for="msg">Message</label>
         <textarea
           id="message"
           name="message"
@@ -95,9 +101,10 @@ const Contact = () => {
           placeholder="message *"
           value={message}
         />
+        </div>
       </div>
       <input
-        className="button"
+        className="button-contact"
         type="button"
         value="Envoyer"
         onClick={handleSubmit}
