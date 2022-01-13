@@ -97,7 +97,7 @@ const Contact = () => {
         />
       </div>
       <input
-        className="button"
+        className="button-contact"
         type="button"
         value="Envoyer"
         onClick={handleSubmit}
