@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
@@ -11,20 +11,20 @@ const BoissonsChaudes = () => {
             setHotDrinks (result.hotDrinks);
         };
         fetchDrinks();        
-    }, [hotDrinks]);
+    }, []);
 
     return (
         <div className='boissons-chaudes'>
             <h1>Vous trouverez ici, toutes une gamme de cafés</h1>
-           <Fragment>
+           <div>
            <ul>
-               {hotDrinks && hotDrinks.map(item =>(
-                   <li key={item.id}>
-                   <p>{item.name}</p>
+               {hotDrinks && hotDrinks.map(hotDrink =>(
+                   <li key={hotDrink.id}>
+                   <p>{hotDrink.name}</p>
                    </li>
                ))}
            </ul>
-           </Fragment>
+           </div>
         </div>
     );
 };
