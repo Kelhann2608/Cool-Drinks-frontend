@@ -7,18 +7,18 @@ const BoissonsChaudes = () => {
 
     useEffect(() => {
         const fetchDrinks = async() => {
-            const result = await axios(`http://localhost:3002/api/categories/1/products/`);
+            const result = await axios(`http://localhost:3005/api/categories/1/products/`);
             setHotDrinks (result.hotDrinks);
         };
         fetchDrinks();        
-    }, []);
+    }, [hotDrinks]);
 
     return (
         <div className='boissons-chaudes'>
             <h1>Vous trouverez ici, toutes une gamme de cafés</h1>
            <Fragment>
            <ul>
-               {hotDrinks.map(item =>(
+               {hotDrinks && hotDrinks.map(item =>(
                    <li key={item.id}>
                    <p>{item.name}</p>
                    </li>
