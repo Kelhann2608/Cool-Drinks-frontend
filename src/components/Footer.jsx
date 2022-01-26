@@ -15,7 +15,7 @@ const Footer = () => {
         <img src={instagram} alt="logo" className="logo" />
       </a>
 
-      <a href="mailto:cooldrinks@gmail.com" className="mail-footer">
+      <a href="mailto:cooldrinks64@gmail.com" className="mail-footer">
         cooldrinks64@gmail.com
       </a>
       <p className="text-footer">06.71.71.71.71</p>
