@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer">
       <a
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         href="https://instagram.com/"
         className="instagram-button"
         data-show-count="false"

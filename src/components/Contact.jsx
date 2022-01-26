@@ -1,20 +1,20 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import validator from 'validator';
+import validator from "validator";
 import "./Contact.css";
 
 const Contact = () => {
-  const form = useRef(); 
-  const [emailError, setEmailError] = useState('')
+  const form = useRef();
+  const [emailError, setEmailError] = useState("");
   const validateEmail = (e) => {
-    var email = e.target.value
-  
+    const email = e.target.value;
+
     if (validator.isEmail(email)) {
-      setEmailError('Valid Email :)')
+      setEmailError("Valid Email :)");
     } else {
-      setEmailError('Enter valid Email!')
+      setEmailError("Enter valid Email!");
     }
-  } 
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,8 +29,8 @@ const Contact = () => {
       .then((res) => {
         console.log("success !");
       })
-      .catch(
-        (err) => console.log("Une erreur s'est produite, veuillez réessayer.")
+      .catch((err) =>
+        console.log("Une erreur s'est produite, veuillez réessayer.")
       );
   };
 
@@ -73,7 +73,6 @@ const Contact = () => {
             onChange={(e) => validateEmail(e)}
           />
           <span>{emailError}</span>
-         
         </div>
         <div className="select-content">
           <label htmlFor="select">Demande</label>
@@ -93,11 +92,7 @@ const Contact = () => {
           />
         </div>
       </div>
-      <button
-        className="button-contact"
-        type="submit"
-        value="Envoyer"
-      >
+      <button className="button-contact" type="submit" value="Envoyer">
         Envoyer
       </button>
     </form>

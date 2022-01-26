@@ -1,32 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const BoissonsChaudes = () => {
-    const [hotDrinks, setHotDrinks] = useState([]);
+  const [hotDrinks, setHotDrinks] = useState();
+  useEffect(() => {
+    axios.get("http://localhost:3005/api/categories/1/products").then((res) => {
+      console.log(res.data);
+      setHotDrinks(res.data);
+    });
+  }, []);
 
-    useEffect(() => {
-        const fetchDrinks = async() => {
-            const result = await axios(`http://localhost:3005/api/categories/1/products/`);
-            setHotDrinks (result.hotDrinks);
-        };
-        fetchDrinks();        
-    }, []);
-
-    return (
-        <div className='boissons-chaudes'>
-            <h1>Vous trouverez ici, toutes une gamme de cafés</h1>
-           <div>
-           <ul>
-               {hotDrinks && hotDrinks.map(hotDrink =>(
-                   <li key={hotDrink.id}>
-                   <p>{hotDrink.name}</p>
-                   </li>
-               ))}
-           </ul>
-           </div>
-        </div>
-    );
+  return (
+    <div className="boissons-chaudes">
+      <h1>Vous trouverez ici, toutes une gamme de cafés</h1>
+      <div>
+        {!hotDrinks ? (
+          "No data found"
+        ) : (
+          <ul>
+            {hotDrinks.map((hotDrink, index) => (
+              <ul key={index}>
+                <li>{hotDrink.name}</li>
+                <li>{hotDrink.description}</li>
+                <li>{hotDrink.image}</li>
+              </ul>
+            ))}
+          </ul>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default BoissonsChaudes;
