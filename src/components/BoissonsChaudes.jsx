@@ -20,7 +20,7 @@ const BoissonsChaudes = () => {
           <ul className="hotdrink-link">
             {hotDrinks.map((hotDrink, index) => (
               <ul key={index}>
-                <li className="hotdrink-link-a">{hotDrink.name}</li>
+                <li className="hotdrink-link-a" id="title">{hotDrink.name}</li>
                 <li className="hotdrink-link-a">{hotDrink.description}</li>
                 <li className="hotdrink-link-a">{hotDrink.image}</li>
               </ul>
