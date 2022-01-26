@@ -61,16 +61,21 @@ h1 {
 }
 .hotdrink-link {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  width: 90%;
 }
 .hotdrink-link-a {
-  display: flex;
+  display: block;
   flex-direction: column;
   text-decoration: none;
   background-color: #00512a;
   border-radius: 5px;
   box-shadow: 4px 4px 4px black;
   color: white;
+  width: 23vh;
+  height: 20vh;
+  margin: 16px;
 }
 #title {
   font-size: 20px;
