@@ -59,6 +59,15 @@ h1 {
 .paragraph {
   font-size: 26px;
 }
+.hotdrink-link {
+  display: flex;
+  list-style-type: none;
+}
+.hotdrink-link-a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 1600px) {
   .nav-links-a {

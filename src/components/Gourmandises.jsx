@@ -12,16 +12,16 @@ const Gourmandises = () => {
     return (
         <div>
            <h1>Vous trouverez ici, toute une gamme de gâteaux et viennoiseries</h1>
-           <div>
+           <div className='hotdrinks'>
            {!delicacies ? (
           "No data found"
         ) : (
-          <ul>
+          <ul className='hotdrink-link'>
             {delicacies.map((delicacie, index) => (
               <ul key={index}>
-                <li>{delicacie.name}</li>
-                <li>{delicacie.description}</li>
-                <li>{delicacie.image}</li>
+                <li className='hotdrink-link-a'>{delicacie.name}</li>
+                <li className='hotdrink-link-a'>{delicacie.description}</li>
+                <li className='hotdrink-link-a'>{delicacie.image}</li>
               </ul>
             ))}
           </ul>

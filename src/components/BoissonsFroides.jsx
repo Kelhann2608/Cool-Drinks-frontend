@@ -13,16 +13,16 @@ const BoissonsFroides = () => {
     return (
         <div>
            <h1>Vous trouverez ici, toute une gamme de smoothies</h1> 
-           <div>
+           <div className='hotdrinks'>
            {!coldDrinks ? (
           "No data found"
         ) : (
-          <ul>
+          <ul className='hotdrink-link'>
             {coldDrinks.map((coldDrink, index) => (
               <ul key={index}>
-                <li>{coldDrink.name}</li>
-                <li>{coldDrink.description}</li>
-                <li>{coldDrink.image}</li>
+                <li className='hotdrink-link-a'>{coldDrink.name}</li>
+                <li className='hotdrink-link-a'>{coldDrink.description}</li>
+                <li className='hotdrink-link-a'>{coldDrink.image}</li>
               </ul>
             ))}
           </ul>
