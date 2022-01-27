@@ -1,115 +1,100 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import validator from "validator";
+import "./Contact.css";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const form = useRef();
+  const [emailError, setEmailError] = useState("");
+  const validateEmail = (e) => {
+    const email = e.target.value;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    sendFeedback("***TEMPLAYE_ID***", {
-      name,
-      firstName,
-      phone,
-      email,
-      message,
-    });
+    if (validator.isEmail(email)) {
+      setEmailError("Valid Email :)");
+    } else {
+      setEmailError("Enter valid Email!");
+    }
   };
 
-  const sendFeedback = (templateId, variables) => {
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    window.emailjs
-      .send("gmail", templateId, variables)
+    emailjs
+      .sendForm(
+        "service_ck5iagr",
+        "template_juwwjhm",
+        e.target,
+        "user_cmHTWP8Hb3ZAZaP4hwNoI"
+      )
       .then((res) => {
-        console.log('success !');
-        setName("");
-        setFirstName("");
-        setPhone("");
-        setEmail("");
-        setMessage("");
+        console.log("success !");
       })
-      .catch(
-        (err) =>
-          document.querySelector('.form-message').innerHTML =
-            "Une erreur s'est produite, veuillez réessayer.")
+      .catch((err) =>
+        console.log("Une erreur s'est produite, veuillez réessayer.")
+      );
   };
 
   return (
-    <form className="contact-form">
-      <h1 className='contact-h1'>Pour vos commandes personnalisées, veuillez nous laisser vos coordonnées</h1>
+    <form className="contact-form" ref={form} onSubmit={sendEmail}>
+      <h1 className="contact-h1">
+        Pour vos commandes personnalisées, veuillez nous laisser vos coordonnées
+      </h1>
       <div className="form-content">
-      <label for="name">Nom</label>
+        <label htmlFor="lastname">Nom</label>
         <input
           type="text"
-          id="name"
-          name="name"
-          onChange={(e) => setName(e.target.value)}
+          id="lastname"
+          name="lastname"
           placeholder="nom *"
-          value={name}
           autoComplete="off"
         />
-        <label for="firstname">Prénom</label>
+        <label htmlFor="firstname">Prénom</label>
         <input
           type="text"
           id="firstname"
           name="firstname"
-          onChange={(e) => setFirstName(e.target.value)}
           placeholder="prénom"
-          value={firstName}
         />
-        <label for="phone">Téléphone</label>
+        <label htmlFor="phone">Téléphone</label>
         <input
           type="text"
           id="phone"
           name="phone"
-          onChange={(e) => setPhone(e.target.value)}
           placeholder="téléphone"
-          value={phone}
         />
-        <div className="email-content"> 
-        <label for="email">Email</label>         
+        <div className="email-content">
+          <label htmlFor="email">Email</label>
           <input
             type="mail"
             id="email"
             name="email"
-            onChange={(e) => setEmail(e.target.value)}
             placeholder="email *"
-            value={email}
             autoComplete="off"
+            onChange={(e) => validateEmail(e)}
           />
-          <label id="not-mail">Email non valide</label>
+          <span>{emailError}</span>
         </div>
-        <div className='select-content'>
-          <label for="select">Demande</label>
+        <div className="select-content">
+          <label htmlFor="select">Demande</label>
           <select name="select" type="select" id="select">
             <option value="">--Veuillez choisir une option</option>
             <option value="devis">Devis</option>
             <option value="réclamation">Réclamation</option>
-            <option value="commandes">Commandes</option>
+            <option value="commandes">Demandes</option>
           </select>
         </div>
-        <div className='message-content'>
-        <label for="msg">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="message *"
-          value={message}
-        />
+        <div className="message-content">
+          <label htmlFor="msg">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="message *"
+          />
         </div>
       </div>
-      <input
-        className="button-contact"
-        type="button"
-        value="Envoyer"
-        onClick={handleSubmit}
-      />
-      <div className="form-message"></div>
+      <button className="button-contact" type="submit" value="Envoyer">
+        Envoyer
+      </button>
     </form>
   );
 };

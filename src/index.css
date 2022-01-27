@@ -57,7 +57,32 @@ h1 {
   font-size: 32px;
 }
 .paragraph {
-  font-size: 26px;
+  font-size: 24px;
+}
+.hotdrink-link {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 97%;
+}
+.hotdrink-link-a {
+  display: block;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: #00512a;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px black;
+  color: white;
+  width: 31vh;
+  height: 28vh;
+  margin-top: 3vh;
+  margin-right: 6vh;
+  margin-left: 14vh;
+}
+#title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
 @media screen and (max-width: 1600px) {

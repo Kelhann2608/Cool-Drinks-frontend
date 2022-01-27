@@ -1,5 +1,5 @@
 import React from "react";
-import instagram from "./Assets/instagram.png";
+import instagram from "./assets/instagram.png";
 import "./Footer.css";
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer">
       <a
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         href="https://instagram.com/"
         className="instagram-button"
         data-show-count="false"
@@ -15,7 +15,7 @@ const Footer = () => {
         <img src={instagram} alt="logo" className="logo" />
       </a>
 
-      <a href="mailto:cooldrinks@gmail.com" className="mail-footer">
+      <a href="mailto:cooldrinks64@gmail.com" className="mail-footer">
         cooldrinks64@gmail.com
       </a>
       <p className="text-footer">06.71.71.71.71</p>

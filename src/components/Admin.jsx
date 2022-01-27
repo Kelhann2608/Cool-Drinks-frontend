@@ -14,7 +14,7 @@ const Admin = () => {
         Pour accéder à la plateforme d'administration, veuillez vous connecter
       </h1>
       <div className="admin-content">
-      <label for="login">Login</label>
+      <label htmlFor="login">Login</label>
         <input
           className="input-admin"
           type="text"
@@ -24,7 +24,7 @@ const Admin = () => {
           placeholder="Login"
           value={login}
         />
-        <label for="password">Password</label>
+        <label htmlFor="password">Password</label>
         <input
         className="input-admin"
           type="text"
