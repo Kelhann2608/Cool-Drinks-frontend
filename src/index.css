@@ -57,25 +57,27 @@ h1 {
   font-size: 32px;
 }
 .paragraph {
-  font-size: 26px;
+  font-size: 24px;
 }
 .hotdrink-link {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  width: 90%;
+  width: 97%;
 }
 .hotdrink-link-a {
   display: block;
   flex-direction: column;
   text-decoration: none;
   background-color: #00512a;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 4px 4px 4px black;
   color: white;
-  width: 23vh;
-  height: 20vh;
-  margin: 16px;
+  width: 31vh;
+  height: 28vh;
+  margin-top: 3vh;
+  margin-right: 6vh;
+  margin-left: 14vh;
 }
 #title {
   font-size: 20px;

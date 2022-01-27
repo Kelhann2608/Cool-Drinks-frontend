@@ -1,5 +1,5 @@
 import React from "react";
-import instagram from "./Assets/instagram.png";
+import instagram from "./assets/instagram.png";
 import "./Footer.css";
 
 const Footer = () => {

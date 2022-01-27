@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import cadenas from "./Assets/cadenas.png";
+import cadenas from "./assets/cadenas.png";
 
 const Header = () => {
   return (
