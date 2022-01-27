@@ -5,7 +5,6 @@ const Gourmandises = () => {
   const [delicacies, setDelicacies] = useState();
   useEffect(() => {
     axios.get("http://localhost:3005/api/categories/3/products").then((res) => {
-      console.log(res.data);
       setDelicacies(res.data);
     });
   }, []);

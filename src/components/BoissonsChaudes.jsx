@@ -5,7 +5,6 @@ const BoissonsChaudes = () => {
   const [hotDrinks, setHotDrinks] = useState();
   useEffect(() => {
     axios.get("http://localhost:3005/api/categories/1/products").then((res) => {
-      console.log(res.data);
       setHotDrinks(res.data);
     });
   }, []);
