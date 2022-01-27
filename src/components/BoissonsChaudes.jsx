@@ -24,7 +24,7 @@ const BoissonsChaudes = () => {
 
                   <h2>{hotDrink.name}</h2>
 
-                  {hotDrink.image}
+                 <img src={hotDrink.image} alt="hotdrinks" /> 
                   
                   {hotDrink.description}
                  

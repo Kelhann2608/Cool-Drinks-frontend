@@ -20,10 +20,10 @@ const Gourmandises = () => {
             {delicacies.map((delicacie, index) => (
               <ul key={index}>
                 <li className="hotdrink-link-a">
-                  
+
                   <h2>{delicacie.name}</h2>
 
-                  {delicacie.image}
+                  <img src={delicacie.image} alt="gourmandises" />
 
                   {delicacie.description}
                 </li>
