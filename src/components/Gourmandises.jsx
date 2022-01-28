@@ -5,7 +5,6 @@ const Gourmandises = () => {
   const [delicacies, setDelicacies] = useState();
   useEffect(() => {
     axios.get("http://localhost:3005/api/categories/3/products").then((res) => {
-      console.log(res.data);
       setDelicacies(res.data);
     });
   }, []);
@@ -20,10 +19,10 @@ const Gourmandises = () => {
             {delicacies.map((delicacie, index) => (
               <ul key={index}>
                 <li className="hotdrink-link-a">
-                  
+
                   <h2>{delicacie.name}</h2>
 
-                  {delicacie.image}
+                  <img src={delicacie.image} alt="gourmandises" />
 
                   {delicacie.description}
                 </li>

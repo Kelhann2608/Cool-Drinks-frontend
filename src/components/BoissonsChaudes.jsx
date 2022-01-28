@@ -4,8 +4,8 @@ import axios from "axios";
 const BoissonsChaudes = () => {
   const [hotDrinks, setHotDrinks] = useState();
   useEffect(() => {
-    axios.get("http://localhost:3005/api/categories/1/products").then((res) => {
-      console.log(res.data);
+    axios.get("http://localhost:3005/api/categories/1/products")
+    .then((res) => {
       setHotDrinks(res.data);
     });
   }, []);
@@ -21,13 +21,11 @@ const BoissonsChaudes = () => {
             {hotDrinks.map((hotDrink, index) => (
               <ul key={index}>
                 <li className="hotdrink-link-a">
-
                   <h2>{hotDrink.name}</h2>
 
-                  {hotDrink.image}
-                  
+                  <img src={hotDrink.image} alt="hotdrinks" />
+
                   {hotDrink.description}
-                 
                 </li>
               </ul>
             ))}
