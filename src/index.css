@@ -160,4 +160,25 @@ h1 {
   .paragraph {
     font-size: 18px;
   }
+  .hotdrink-link {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 95%;
+  }
+  .hotdrink-link-a {
+    display: block;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #00512a;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px black;
+    color: white;
+    width: 20vh;
+    height: 16vh;
+    margin-top: 2vh;
+    margin-bottom: 1.2vh;
+    margin-right: 3vh;
+    margin-left: 3.5vh;
+  }
 }
