@@ -12,7 +12,7 @@ const Contact = () => {
     if (validator.isEmail(email)) {
       setEmailError("Valid Email :)");
     } else {
-      setEmailError("Enter valid Email!");
+      setEmailError("Enter valid Email! :(");
     }
   };
 

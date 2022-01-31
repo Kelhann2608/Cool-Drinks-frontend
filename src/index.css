@@ -77,8 +77,8 @@ h1 {
   height: 28vh;
   margin-top: 3vh;
   margin-bottom: 2vh;
-  margin-right: 6vh;
-  margin-left: 14vh;
+  margin-right: 7vh;
+  margin-left: 16vh;
 }
 #title {
   font-size: 20px;
@@ -112,6 +112,27 @@ h1 {
   .paragraph {
     font-size: 20px;
   }
+  .hotdrink-link {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 95%;
+  }
+  .hotdrink-link-a {
+    display: block;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #00512a;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px black;
+    color: white;
+    width: 25vh;
+    height: 20vh;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    margin-right: 4vh;
+    margin-left: 10vh;
+  }
 }
 @media screen and (max-width: 875px) {
   .nav-links-a {
@@ -138,5 +159,26 @@ h1 {
   }
   .paragraph {
     font-size: 18px;
+  }
+  .hotdrink-link {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 95%;
+  }
+  .hotdrink-link-a {
+    display: block;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #00512a;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px black;
+    color: white;
+    width: 20vh;
+    height: 16vh;
+    margin-top: 2vh;
+    margin-bottom: 1.2vh;
+    margin-right: 3vh;
+    margin-left: 3.5vh;
   }
 }
