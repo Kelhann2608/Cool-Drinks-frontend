@@ -23,7 +23,7 @@ const BoissonsChaudes = () => {
                 <li className="hotdrink-link-a">
                   <h2>{hotDrink.name}</h2>
 
-                  <img src={hotDrink.image} alt="hotdrinks" />
+                  <img src={hotDrink.image} alt="hotdrink" />
 
                   {hotDrink.description}
                 </li>
