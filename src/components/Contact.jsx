@@ -92,7 +92,7 @@ const Contact = () => {
           />
         </div>
       </div>
-      <button className="button-contact" type="submit" value="Envoyer">
+      <button className="button-contact" type="button" value="Envoyer">
         Envoyer
       </button>
     </form>
