@@ -18,14 +18,14 @@ const Gourmandises = () => {
           <ul className="hotdrink-link">
             {delicacies.map((delicacie, index) => (
               <ul key={index}>
-                <li className="hotdrink-link-a">
+                <div className="hotdrink-link-a">
 
                   <h2>{delicacie.name}</h2>
 
                   <img src={delicacie.image} alt="gourmandises" className="drinks" />
 
                   {delicacie.description}
-                </li>
+                </div>
               </ul>
             ))}
           </ul>
