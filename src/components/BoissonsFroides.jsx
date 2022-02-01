@@ -23,7 +23,7 @@ const BoissonsFroides = () => {
 
                   <h2>{coldDrink.name}</h2>
 
-                  <img src={coldDrink.image} alt="colddrinks" />
+                  <img src={coldDrink.image} alt="colddrinks" className="drinks" />
 
                   {coldDrink.description}
                 </li>

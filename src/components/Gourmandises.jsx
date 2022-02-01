@@ -22,7 +22,7 @@ const Gourmandises = () => {
 
                   <h2>{delicacie.name}</h2>
 
-                  <img src={delicacie.image} alt="gourmandises" />
+                  <img src={delicacie.image} alt="gourmandises" className="drinks" />
 
                   {delicacie.description}
                 </li>
