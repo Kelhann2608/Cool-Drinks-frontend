@@ -80,11 +80,6 @@ h1 {
   margin-right: 7vh;
   margin-left: 16vh;
 }
-#title {
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-}
 .drinks {
   display: flex;
   justify-self: center;
