@@ -66,7 +66,7 @@ h1 {
   width: 97%;
 }
 .hotdrink-link-a {
-  display: block;
+  display: flex;
   flex-direction: column;
   text-decoration: none;
   background-color: #00512a;
@@ -74,7 +74,7 @@ h1 {
   box-shadow: 4px 4px 4px black;
   color: white;
   width: 31vh;
-  height: 28vh;
+  height: 30vh;
   margin-top: 3vh;
   margin-bottom: 2vh;
   margin-right: 7vh;
@@ -82,10 +82,9 @@ h1 {
 }
 .drinks {
   display: flex;
-  justify-self: center;
+  align-self: center;
   width: 200px;
   height: 140px;
-  margin-left: 45px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -124,7 +123,7 @@ h1 {
     width: 95%;
   }
   .hotdrink-link-a {
-    display: block;
+    display: flex;
     flex-direction: column;
     text-decoration: none;
     background-color: #00512a;
@@ -140,10 +139,9 @@ h1 {
   }
   .drinks {
     display: flex;
-    justify-self: center;
+    align-self: center;
     width: 150px;
     height: 120px;
-    margin-left: 43px;
   }
 }
 @media screen and (max-width: 875px) {
@@ -182,7 +180,7 @@ h1 {
     width: 95%;
   }
   .hotdrink-link-a {
-    display: block;
+    display: flex;
     flex-direction: column;
     text-decoration: none;
     background-color: #00512a;
@@ -198,9 +196,8 @@ h1 {
   }
   .drinks {
     display: flex;
-    justify-self: center;
+    align-self: center;
     width: 110px;
     height: 66px;
-    margin-left: 40px;
   }
 }
