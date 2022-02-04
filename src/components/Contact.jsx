@@ -19,7 +19,6 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    //Identifiants emailjs
     emailjs
       .sendForm(
         "service_ck5iagr",
@@ -93,7 +92,7 @@ const Contact = () => {
           />
         </div>
       </div>
-      <button className="button-contact" type="button" value="Envoyer">
+      <button className="button-contact" type="submit" value="Envoyer">
         Envoyer
       </button>
     </form>
